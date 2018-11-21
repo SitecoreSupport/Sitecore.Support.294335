@@ -4,12 +4,13 @@
   using System.Linq;
   using Sitecore.ContentTesting;
   using Sitecore.ContentTesting.Tests;
+  using Sitecore.Diagnostics;
   using Sitecore.Globalization;
   using Sitecore.Pipelines;
   using Sitecore.Web.UI.Sheer;
   using Sitecore.Workflows.Simple;
 
-  public class RemoveTestAction : Sitecore.ContentTesting.Workflows.RemoveTestsAction
+  public class RemoveTestsAction : Sitecore.ContentTesting.Workflows.RemoveTestsAction
   {
     private const string WORKFLOW_ARGS_ID = "RemoveTestAction-workflow-args";
     private const string TESTS_ID = "RemoveTestAction-tests-args";
@@ -43,7 +44,6 @@
               test.Remove(this.DeleteTestDefinition);
             }
           }
-
           workflowArgs.Pipeline.Resume();
         }
       }

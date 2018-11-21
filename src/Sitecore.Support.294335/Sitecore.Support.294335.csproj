@@ -57,7 +57,7 @@
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ContentTesting\Workflows\RemoveTestAction.cs" />
+    <Compile Include="ContentTesting\Workflows\RemoveTestsAction.cs" />
     <Compile Include="hooks\UpdateRemoveTestsAction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
