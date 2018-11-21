@@ -44,7 +44,14 @@
               test.Remove(this.DeleteTestDefinition);
             }
           }
-          workflowArgs.Pipeline.Resume();
+          try
+          {
+            workflowArgs.Pipeline.Resume();
+          }
+          catch (System.ArgumentNullException exc)
+          {
+            Log.Info("Sitecore.Support.294335 has received an error caused by bug #294335. Error message: " + exc.Message + " . This is caused by removing an incomplete test via a workflow action. This can be ignored.", this);
+          }
         }
       }
       else
