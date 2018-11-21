@@ -58,11 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ContentTesting\Workflows\RemoveTestsAction.cs" />
-    <Compile Include="hooks\UpdateRemoveTestsAction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_Config\Include\zzz\Sitecore.Support.294335.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
